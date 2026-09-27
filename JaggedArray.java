@@ -18,5 +18,7 @@ public class JaggedArray {
             System.out.println("");
         }
 
+        System.out.println(arr.length);
+
     }
 }
