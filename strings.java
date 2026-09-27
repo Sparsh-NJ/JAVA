@@ -7,8 +7,9 @@ public class strings {
 
         String s1 = "Nandrajog"; //This also works in java behind the scenes it will create an object in heap
        
-        //Various methos od String class
+        //Various methods of String class
         System.out.println( s.charAt(1));
+
 
         //String constant pool conecpt:--
         //JVM has heap memory inside heap we have a string constant pool in which string values are stored.
@@ -30,8 +31,8 @@ public class strings {
 
         //Threfore by default Strings are immutable
 
-        //If we want mutable strings then we can use:-
-        //1) String buffer
-        //2) String Builder
+        // If we want mutable strings then we can use:-
+        // 1) String buffer
+        // 2) String Builder
     }
 }

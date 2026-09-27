@@ -28,5 +28,11 @@ public class Arrays2 {
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i].name + " " + arr[i].roll_no);
         }
+
+        //using enhance for loop
+        for(Student s: arr){
+            System.out.println(s.name + " " + s.roll_no);
+        }
+
     }
 }
