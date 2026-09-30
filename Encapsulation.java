@@ -19,7 +19,7 @@ class Human{
         this.name = name;
     }
     
-    //Setter deep divevwhy we use this keyword? 
+    //Setter deep dive why we use 'this' keyword? 
     
      public void setNam(String name){
         name = name; //If we do something like this it is highly possible that both name variables are local hence wrong result
@@ -32,10 +32,11 @@ class Human{
         //Therefore main will still not show correct result
     }
 
-    //What to do ? we can pass the same obj of human class which is in main method in setter. That will work but lengthy
+    //What to do ? -> we can pass the same obj of human class which is in main method in setter. That will work but lengthy
     //Therefore we can directltly use this keyword for this functionality
 
     //this.name tells whatever current object is calling the setter , fetch name of that. in our case it is the obj of human class in main method
+    //'this' represents the current object which called the setter method.
     
 
 

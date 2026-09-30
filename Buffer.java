@@ -25,7 +25,7 @@ public class Buffer {
 
        //Replace method can be used to replace the old string with new value
        s.replace(0, s.length(), "Gamer");
-        System.out.println(s);
+       System.out.println(s);
 
        //String builder is same as string buffer for creting mutable strings only difference between them is 
        //StringBuffer is Thread safe and String builder is not 

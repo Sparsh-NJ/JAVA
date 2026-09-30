@@ -8,8 +8,7 @@ class Mobile{
     public String getName() {
         return name;
     }
-
-    //static instances should be called by class name itself , thats a good practice
+   
     public void setName(String name) {
         Mobile.name = name;
     }
@@ -27,17 +26,18 @@ class Mobile{
     }
 
     //Method to print all values
-    //Here we can see that in side a non static method we can call a static keyword --> name
+    //Here we can see that inside a non static method we can call a static variable --> name
     public void show(){
         System.out.println(name + " " + model + " " + price);
     }
 
     //Here we cannot use non static instances of the class in a static method 
-    // name is static therefore acceptable inside static method , model and price are not accepted 
+    //name is static therefore acceptable inside static method , model and price are not accepted 
     //We need to specify the object for which model and price need to be printed
     public static void show2(Mobile obj1){
         System.out.println(name + " "+ obj1.model + " " + obj1.price);
     }
+    
     //we can directly call a static method using the class name in the calling class
     
 }
@@ -61,10 +61,13 @@ public class staticKey {
         obj3.setModel(3);
         obj3.setPrice(500);
 
+        //All these 3 show methods will print 'Nokia' as name because it was set last & is static
         obj1.show();
-        obj3.show();//This shows obj2 data
-        obj2.show();//This shows obj1 data
+        obj2.show();
+        obj3.show();
+
         //Therefore when we use Mobile.show2() which object data to show?? Therefore static methods only take static instances if the class
+        //static instances should be called by class name itself , thats a good practice
         Mobile.show2(obj1);
     }
 }
