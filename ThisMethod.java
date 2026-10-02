@@ -1,3 +1,5 @@
+//this() -> method calls the constrcutor of the same class
+
 class A  {
     
     A(){
@@ -25,5 +27,5 @@ public class ThisMethod {
         B obj = new B(6);
     }
 
-    //this is how we can call both the constructors at the same time of same class
+    //This is how we can call both the constructors at the same time of same class
 }

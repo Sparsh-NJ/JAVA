@@ -1,3 +1,5 @@
+//super() -> method calls the constrcutor of the parent class
+
 class A extends Object {//Every class extends Object class by Default
     
     //By default when we inisitlaize a constructor it has super() method always just not visible, which calls the default constructor of parent class
@@ -18,12 +20,13 @@ class B extends A{
         System.out.println("Inside default constructor of B");
     }
     B(int b){
-        super();
+        super(); //This will call the default constructor of parent class
+        // super(b); //If we pass a parameter in the suprer method in that case it will call parameterized constreuctor of sparent class
         System.out.println("Inside parametarized constructor of B");
     }
 }
 
-public class SuperaKeyword {
+public class SuperKeyword {
     public static void main(String[] args) {
         B obj = new B(4);//Even if we call parametarized constrcutor of child class B it will by default call --- default constructor of A class
     }
