@@ -26,7 +26,7 @@ public class DynamicMethodDipatch {
         //Here at compile time it is not decided which show() method will be called.
         //At run time it will be known , therefore it is called dynamic dispatch
     
-        //We can also make object liek thiss
+        //We can also make object like this :-
         A obj2 = new B(); //Parent reference to child in heap
         obj2.show();//calss show of B as obj2 points to B class
 
