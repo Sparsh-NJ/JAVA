@@ -1,7 +1,6 @@
-//just like abstract classes , interfaces have all methods as public abstract by deafult
-//It is mandatory to implemnt all methods inside an interface 
+//just like abstract methods in abstract classes , interfaces have all methods as public abstract by default
+//It is mandatory to implement all methods inside an interface 
 interface A{
-
     String name = "Sparsh"; //By default variables inside an interface are final and static
     void show();
     void config();
@@ -19,12 +18,13 @@ class B implements A{
 
 public class Interfaces {
     public static void main(String[] args) {
-        A obj; // we can create an object of an interface but cannot use new A(); to instantiate it
+        A obj; // we can create an object of type of interface but cannot use new A(); to instantiate it
         obj = new B();
+
         obj.show();
         obj.config();
         String n = obj.name;//one way to call name , by object 
-        //As varaible are final and static inside an interface I can directly use those varibles using interface name
+        //As varaible are final and static inside an interface I can directly use Interface name ie A.name
         n = A.name;
         // A.name = "Nandrajog"; // by default A.name is final we cnnot assign new value
         System.out.println(n);

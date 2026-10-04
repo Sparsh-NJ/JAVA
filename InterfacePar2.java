@@ -29,6 +29,7 @@ public class InterfacePar2 implements C,A {
     }
 
     public static void main(String[] args) {
+
         C obj;
         obj = new InterfacePar2();
         obj.sum();

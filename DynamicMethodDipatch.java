@@ -28,7 +28,7 @@ public class DynamicMethodDipatch {
     
         //We can also make object like this :-
         A obj2 = new B(); //Parent reference to child in heap
-        obj2.show();//calss show of B as obj2 points to B class
+        obj2.show();//calls show() of B as obj2 points to B class
 
         test t = new test();
         // t = new A(); // This throw an error because inheritance is not there

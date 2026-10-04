@@ -1,6 +1,6 @@
 //Suppose I don't know how to implement musicSystem method but want child classes to implement that feature as a compulsion
-//In that case I can just declare musicSystem class using abstarct keyword
-//But to implement abstarct methods class must also be abstarct.
+//In that case I can just declare musicSystem method using abstract keyword
+//But to implement abstract methods, class must also be abstract
 abstract class Car{
 
     public void drive(){
@@ -17,16 +17,14 @@ class Fortuner extends Car{
         System.out.println("Music playing");
     }
 }
-public class AbstarctClasses {
+public class AbstractClasses {
     public static void main(String[] args) {
         Fortuner obj = new Fortuner();
         obj.drive();
         obj.musicSystem();
 
-        // Car a = new Car() //We can't create objects of abstract classes directly
-        //as it does not makes sense to create an object of a class which has only declared the methodsand not implemented them
-         
-
+        // Car a = new Car() //We can't create objects of abstract classes directly,
+        //as it does not makes sense to create an object of a class which has only declared the methods and not implemented them
         //An abstract class can have all methods as non abstract also.
     }
 }
