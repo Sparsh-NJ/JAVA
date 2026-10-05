@@ -13,7 +13,7 @@ interface C extends B{
 //Define methods of both interfaces
 //also method of A interface
 
-public class InterfacePar2 implements C,A {
+public class InterfacePart2 implements C,A {
 
     public void sum(){
         System.out.println("Sum");
