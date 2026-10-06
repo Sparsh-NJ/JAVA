@@ -8,6 +8,7 @@ interface A{
 
 public class FunctInterface2 {
     public static void main(String[] args) { //Using lamda expression
+
         // A obj = (int a, int b) ->
         //     {
         //         return a + b;

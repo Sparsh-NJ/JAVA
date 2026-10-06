@@ -2,7 +2,7 @@ public class TypeInference {
 
     // var x = 9; var cannot be used at instance level , it is only used as local varible
     public static void main(String[] args) {
-        //Using TypeInference we can declare variables using var keyword do not need to specify type expilicityly
+        //Using TypeInference we can declare variables using var keyword do not need to specify type expilicitly
         //came in java 10
         //Only applicable for local variables
         var a = 10; //type is decided at the compile time only

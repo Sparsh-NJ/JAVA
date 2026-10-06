@@ -15,7 +15,7 @@ public class FunctionalInterface1 {
         //     }
         // };
 
-        //From above anonymous implementation remove form new keyword till show
+        //From above anonymous implementation remove from new keyword till show
         //This makes lamda expression
         A obj = () ->
             {
@@ -24,7 +24,7 @@ public class FunctionalInterface1 {
         ;
         obj.show();
 
-        //Using Lambda expressoins does not create a .class file for the inner class 
+        //Using Lambda expression does not create a .class file for the inner class 
         //As a result code is lightweight 
     }
 }

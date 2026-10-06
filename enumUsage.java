@@ -1,4 +1,4 @@
-//enum specifies that Status is a class of type enum and all the fileds mentioned are objects
+//enum specifies that Status is a class of type enum and all the fields mentioned are objects
 enum Status{
   Running, Failed, Stuck
 }

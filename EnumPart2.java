@@ -1,3 +1,4 @@
+//By default in java enum extends an Enum class
 //In enum always define objects first otherwise it will throw an error
 //enum classes can have constructors, methods , objects 
 
