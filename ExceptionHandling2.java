@@ -13,13 +13,13 @@ public class ExceptionHandling2 {
         try{
             j = j/i;
             arr[5] = 9; // Execution will also not come here as above thrown an exception
-            System.out.println("After arithmetic excwption"); //this statement will not get executed if above statement throw an exception
+            System.out.println("After arithmetic exception"); //this statement will not get executed if above statement throw an exception
         }catch(ArithmeticException e){
             System.out.println("Cannot divide by Zero " + e);
         }
         catch(IndexOutOfBoundsException e){
             System.out.println("Cannot access an elemnt out of bounds " + e);
-            //When er are not sure which exception will be there , we can use Exception class which is a parent class
+            //When we are not sure which exception will be there , we can use Exception class which is a parent class
         }catch(Exception e){ 
             System.out.println("Not sure about the exception");
         }

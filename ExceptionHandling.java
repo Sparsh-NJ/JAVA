@@ -6,7 +6,6 @@ public class ExceptionHandling {
         int i=0;
         int j=0;
 
-        //try will try to implement the code if it throws an error 
         //we can catch using a catch block
 
         try{

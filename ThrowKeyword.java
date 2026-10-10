@@ -4,7 +4,7 @@ public class ThrowKeyword {
         int j=19;
     
 
-        //Here we are dividing by 18 not zero therefore by default the it will not therown an exception
+        //Here we are dividing by 18 not zero therefore by default the it will not throw an exception
         //Hence will not print anything
 
     //     try{
@@ -17,8 +17,7 @@ public class ThrowKeyword {
     //     }
 
 
-    //But what if we want the compiler to throw an error even if someone tries to divide the number
-    //j by a value greater than j 
+    //But what if we want the compiler to throw an error even if someone tries to divide j by a value greater than j 
     //in this case we can use throw keyword to thrown an exception which will be catched by the compiler
 
           try{
