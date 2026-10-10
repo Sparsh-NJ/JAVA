@@ -11,7 +11,7 @@ public class FinallyBlock {
         try{
             //let's take user input using BufferReader
             InputStreamReader in = new InputStreamReader(System.in);
-            br = new BufferedReader(in); //br will store the user input instring format
+            br = new BufferedReader(in); //br will store the user input in string format
             System.out.println("Enter the user input :-");
             num = Integer.parseInt(br.readLine());//Converting string to int 
         }

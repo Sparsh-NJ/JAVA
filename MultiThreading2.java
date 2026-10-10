@@ -2,7 +2,7 @@ class A extends Thread{
     public void run(){
         for(int i=0;i<100;i++){
             System.out.println("Sparsh");
-        //Suppose scheduler gives 1 milisecond for this thread but we wan this thread to wait 
+        //Suppose scheduler gives 1 milisecond for this thread but we want this thread to wait 
         //10 milliseconds and then execute, in that case we can sleep() method
         try {
             Thread.sleep(10); //This will tell the scheduler wait for 10 ms then execute

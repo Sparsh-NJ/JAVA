@@ -45,7 +45,7 @@ public class MuliThreading3 {
             }
         };
 
-        // obj1.start(); //Her we can see that Runnable interface does not have start method they
+        // obj1.start(); //Here we can see that Runnable interface does not have start method they
         //were coming from Thread class earlier
 
         Thread t1 = new Thread(obj1); // Thread accepts a runnable object . in our case obj1 and obj2 

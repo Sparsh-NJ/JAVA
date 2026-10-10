@@ -1,29 +1,32 @@
-class A extends Thread{
+//To make a class as thread just extend Thread class
+//Inside a thread run() method tells the thread functionality
 
+class A extends Thread{
     public void run(){
         for(int i=0;i<=100;i++){
             System.out.println("Hi");
         }
 }
 }
-//Inside a thread run() method tells the theread functionality
-class B extends Thread{
 
+class B extends Thread{
     public void run(){
         for(int i=0;i<100;i++){
             System.out.println("Hello");
         }
-    }
-    }
+}
+}
 public class MultiThreading {
     public static void main(String[] args) {
         A objA  = new A();
         B objB = new B();
 
         //Now I want both threads to run parallely. ie both loops run at the same time
+        //When we do obj.start() -> This automatically calls the run() method of the thread
+        //Therefore it is mandatory to have a run() method if we are extending Thread class
 
-        objA.start();
-        objB.start();
+        objA.start(); // -> run() of A is called
+        objB.start(); // -> run() of B is called
 
         //Both are now working parallely. ie multitasking achieved
         //But we see the output the sequence of output would be random as 

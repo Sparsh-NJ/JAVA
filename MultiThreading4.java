@@ -1,4 +1,4 @@
-//Let increment method is the shared resource between tro threads
+//Let increment method is the shared resource between two threads
 class Counter{
     int cnt = 0;
     public synchronized void  increment(){
