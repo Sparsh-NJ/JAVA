@@ -12,7 +12,7 @@ public class MultiThreading4 {
 
         //Here both threads are accessing the same resource at the same time , which can cause glitch or unknown outputs
         //This condition is called as Race condition
-        //To remove race condirion we can use synchorized keyword with the shared resource
+        //To remove race condition we can use 'synchorized' keyword with the shared resource
 
         Runnable obj1 =() ->{
                 for(int i=0;i<1000;i++){
@@ -36,9 +36,9 @@ public class MultiThreading4 {
 
         //In earlier multithreading examples we were only doing tasks inside threads
         //But here this sysout statement is part of main method not any thread 
-        //Therefore it will also run independently once the threadsa are started
+        //Therefore it will also run independently once the threads are started
         //Therefore we must join the threads back to main 
-        //Which mentions that let thread complete the execution after that main will do its task
+        //Which let threads to complete the execution, after that main will do its task.
         t1.join();
         t2.join(); //This join method throws an error , for now for code simplicity we are 
         //using throws keyword to let the caller know that he will handle this exception
@@ -52,10 +52,12 @@ public class MultiThreading4 {
         //new ->runnable -> running -> waiting -> dead
 
         //new -> means new thread created
+        //Thread t1 = new Thread() -> New thread is created
 
-        //runnable -> means not running currently but waiting for scheduler to get the thread in running stage
+        //runnable -> means not running currently but waiting for scheduler to get the thread in running stage 
+        //Thread.start() -> thread is now in runnable state
         
-        //running --> running stage
+        //running --> running stage ie when scheduler actually runs the thread
         
         //waiting -> Thread waits for a specified amount of time
         //to put a thread in waiting stage we can use sleep() or wait() methods
