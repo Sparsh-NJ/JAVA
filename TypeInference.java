@@ -1,6 +1,6 @@
 public class TypeInference {
-
-    // var x = 9; var cannot be used at instance level , it is only used as local varible
+    //LVTI :- Local variable type inference, only applicable to local varibles in java , introduced in JAVA 10 
+    //var x = 9; var cannot be used at instance level , it is only used as local variable
     public static void main(String[] args) {
         //Using TypeInference we can declare variables using var keyword do not need to specify type expilicitly
         //came in java 10
@@ -12,6 +12,6 @@ public class TypeInference {
         System.out.println(s);
 
         // var b;//This will cause an error as it is compulsory to initialize the varible if we use var keyword , because compiler will not know how
-        //and what type to assign to b
+        //and of what type to assign to b
     }
 }
