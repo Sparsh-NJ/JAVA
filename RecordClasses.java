@@ -1,28 +1,3 @@
-// 1. Purpose of equals()
-// The equals() method determines if two objects are logically equivalent. 
-// Codefinity
-// Codefinity
-//  +1
-// Logical Equality: By default, the Object class implementation uses the == operator, which only checks if two references point to the same memory location.
-// Value Comparison: Developers override equals() to compare actual data (like a student's ID or name) rather than memory addresses. 
-
-// 2. Purpose of hashCode()
-// The hashCode() method returns an integer representation of an object, acting as a "digest" or unique identifier for efficiency. 
-// Medium
-// Medium
-
-// Bucketing: Hash-based collections use this integer to determine a "bucket" (index) in an internal array where the object should be stored.
-// Performance: It allows collections to narrow down a search from thousands of items to just a few in a specific bucket, providing near O(1) performance for lookups. 
-
-// 3. The equals and hashCode Contract
-// Java enforces a strict contract between these two methods to ensure collections work correctly: 
-// Codefinity
-// Codefinity
-
-// Same Objects, Same Hash: If a.equals(b) is true, then a.hashCode() must equal b.hashCode().
-// Different Objects, Any Hash: If a.equals(b) is false, their hash codes do not have to be different (this is called a "collision"), but having distinct codes improves performance.
-// Consistency: If an object’s state hasn't changed, multiple calls to hashCode() or equals() must return the same result. 
-
 
 // class Student{
 

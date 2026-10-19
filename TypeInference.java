@@ -13,5 +13,8 @@ public class TypeInference {
 
         // var b;//This will cause an error as it is compulsory to initialize the varible if we use var keyword , because compiler will not know how
         //and of what type to assign to b
+
+        //var arr = new int[5]; --> We can declare array using var as well. Just don't do (var arr[] = new int[5]) --> dont use [] with var 
+        //on left hand side. It will throw an error
     }
 }

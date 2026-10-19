@@ -4,9 +4,14 @@
 //If parent is of type saeled in that case child classes must be of any one type from:-
 //1)Sealed . 2)non_sealed , 3)final
 
+//sealed means, giving some of the child classes permission to inherit parent class.
+//non-sealed means, other child class can inherit B. No restrictions
+//final , parent class cannot be inherited
+
 sealed class A permits B,C{
 
 }
+
 non-sealed class B extends A{
 
 }
